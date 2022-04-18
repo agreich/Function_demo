@@ -33,11 +33,12 @@ mean(fish_length) #check to make sure my function works
 ####
 
 von_Bert <- function(age, Linf, k, t0) {
-  pred.length <- Linf*(1-exp(-k*(age-t0))) #just the equation from lab
+  pred.length <- Linf*(1-exp(-k*(age-t0))) #the von Bertalaffy equation
   return(pred.length)
 }
 
 #a real dataset!
-goa <- 
+goa <- read.csv("pollock_race_specimen copy.csv", header=TRUE, skip=6)
+
 
 
